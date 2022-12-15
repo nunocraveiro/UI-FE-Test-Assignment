@@ -24,7 +24,7 @@ const ProductsView = (props: Props) => {
                     <p className='rowThirdItem rowTitle'>NAME</p>
                 </div>
                 {props.devices/* .slice(0, 50) */.map((device: any) => (
-                    <div className='deviceListRow' key={device.model_id} onClick={e => navigateToDevicePage(e, device.model_id)}>
+                    <div className='deviceListRow' key={device.id} onClick={e => navigateToDevicePage(e, device.id)}>
                         <p className='rowFirstItem'>
                             <img src={`https://static.ui.com/fingerprint/ui/icons/${device.icon.id}_51x51.png`} alt='device'/>
                         </p>
@@ -40,7 +40,7 @@ const ProductsView = (props: Props) => {
             <p className='deviceNum'>{props.devices.length} devices</p>
             <section className='deviceGrid'>
                 {props.devices/* .slice(0, 50) */.map((device: any) => (
-                    <div className='deviceGridCard' key={device.model_id} onClick={e => navigateToDevicePage(e, device.model_id)}>
+                    <div className='deviceGridCard' key={device.id} onClick={e => navigateToDevicePage(e, device.id)}>
                         <p className='deviceGridImg'>
                             <img src={`https://static.ui.com/fingerprint/ui/icons/${device.icon.id}_129x129.png`} alt='device'/>
                         </p>

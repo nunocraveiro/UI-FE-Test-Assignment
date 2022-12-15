@@ -16,7 +16,7 @@ const Product = () => {
     useEffect(() => {
         fetch('https://static.ui.com/fingerprint/ui/public.json')
           .then((res) => res.json())
-          .then((data) => setDevice(data.devices.find((element: any) => element.model_id === id)));
+          .then((data) => setDevice(data.devices.find((element: any) => element.id === id)));
     }, [id]);
 
     return (

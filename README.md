@@ -22,3 +22,4 @@ Some features that were not implemented but would improve this app:
 - error messages, namely messages for when the filter or the search do not return any results
 - a button to clear all selected filters
 - unit testing
+- deploying
